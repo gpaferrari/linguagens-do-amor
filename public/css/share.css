@@ -1,0 +1,40 @@
+/* ---------- Compartilhamento ---------- */
+
+.share-card {
+  position: relative;
+  overflow: hidden;
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  background:
+    radial-gradient(120% 90% at 100% 0%, var(--accent-soft), transparent 60%),
+    var(--surface);
+}
+
+.share-heart { font-size: 2rem; line-height: 1; margin-bottom: 8px; }
+
+.share-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.share-card.center .share-actions { justify-content: center; }
+.share-actions p { margin: 0; width: 100%; }
+
+.btn-whatsapp { background: #25d366; border-color: #25d366; color: #0b2e17; }
+.btn-whatsapp:hover { background: #1fb457; border-color: #1fb457; color: #0b2e17; }
+
+.share-feedback { min-height: 1.4em; margin: 10px 0 0; color: var(--accent); font-weight: 500; opacity: 0; }
+.share-feedback.show { animation: share-feedback 2.6s ease forwards; }
+
+@keyframes share-feedback {
+  0% { opacity: 0; transform: translateY(4px); }
+  10%, 80% { opacity: 1; transform: none; }
+  100% { opacity: 0; }
+}
+
+.share-link { margin-top: 12px; font-size: .85rem; }
+
+.shared-result .page-head h1 { max-width: 620px; margin-inline: auto; }
+
+@media (max-width: 560px) {
+  .share-actions .btn { flex: 1 1 auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .share-feedback.show { animation: none; opacity: 1; }
+}

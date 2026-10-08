@@ -1,0 +1,14 @@
+{
+  "name": "linguagens-do-amor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Teste das 5 Linguagens do Amor para noivos, com histórico e comparação do casal.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env dev-server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

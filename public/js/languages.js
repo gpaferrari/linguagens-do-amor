@@ -1,0 +1,86 @@
+// Conteúdo de "Conhecendo as cinco linguagens" do material do curso de noivos.
+
+export const LANGUAGES = {
+  PA: {
+    code: 'PA',
+    name: 'Palavras de Afirmação',
+    color: 'var(--lang-pa)',
+    summary: 'Palavras têm um peso emocional muito grande para você.',
+    examples: [
+      'elogios sinceros',
+      'reconhecimento',
+      'gratidão',
+      'encorajamento',
+      'palavras de carinho',
+      'mensagens durante o dia',
+      'afirmações sobre suas qualidades',
+    ],
+    marriage: 'Não espere que seu cônjuge "saiba" que você o admira. Diga.',
+    phrases: ['Obrigado por cuidar de nós.', 'Eu admiro sua dedicação.', 'Tenho orgulho de você.', 'Eu amo quem você é.'],
+    note: 'Palavras não substituem atitudes, mas podem fortalecer profundamente um relacionamento.',
+  },
+  TQ: {
+    code: 'TQ',
+    name: 'Tempo de Qualidade',
+    color: 'var(--lang-tq)',
+    summary: 'O ponto central não é estar no mesmo ambiente. É estar presente.',
+    examples: [
+      'conversar sem celular',
+      'fazer uma refeição juntos',
+      'sair para caminhar',
+      'compartilhar uma experiência',
+      'ouvir com atenção',
+      'criar momentos somente do casal',
+    ],
+    marriage: 'Uma casa cheia de tarefas não deve significar um casamento sem encontros. Criem espaços intencionais para vocês.',
+    phrases: [],
+    note: '',
+  },
+  RP: {
+    code: 'RP',
+    name: 'Receber Presentes',
+    color: 'var(--lang-rp)',
+    summary: 'Um presente comunica: "Eu pensei em você."',
+    examples: [
+      'uma flor',
+      'um chocolate',
+      'uma fotografia',
+      'uma lembrança de uma viagem',
+      'algo que a pessoa comentou que gostaria',
+      'uma pequena surpresa',
+    ],
+    marriage: 'Não necessariamente existe relação com valor financeiro.',
+    phrases: [],
+    note: 'O valor está no significado, não necessariamente no preço.',
+  },
+  AS: {
+    code: 'AS',
+    name: 'Atos de Serviço',
+    color: 'var(--lang-as)',
+    summary: 'O amor é percebido por meio de atitudes concretas: "Eu vi que você precisava e fiz."',
+    examples: [
+      'ajudar em uma tarefa',
+      'preparar uma refeição',
+      'resolver alguma pendência',
+      'cuidar de algo quando o outro está cansado',
+      'dividir responsabilidades',
+      'antecipar uma necessidade',
+    ],
+    marriage: 'Amor também aparece na pergunta: "O que posso fazer para tornar seu dia um pouco mais leve?"',
+    phrases: [],
+    note: '',
+  },
+  TF: {
+    code: 'TF',
+    name: 'Toque Físico',
+    color: 'var(--lang-tf)',
+    summary: 'O contato físico comunica segurança, conexão e carinho.',
+    examples: ['abraços', 'andar de mãos dadas', 'carinho', 'beijo', 'proximidade', 'aconchego'],
+    marriage:
+      'Carinho físico não deve existir somente nos momentos de intimidade sexual. Pequenos gestos cotidianos também comunicam vínculo e afeto.',
+    phrases: [],
+    note: 'O toque deve sempre respeitar os limites, o consentimento e o conforto de ambos.',
+  },
+};
+
+export const LANG_CODES = Object.keys(LANGUAGES);
